@@ -39,8 +39,8 @@ Este repositorio forma parte del marco docente de estructura de datos y algoritm
 Los estudiantes editan esta sección para agregar sus nombres, correos electrónicos de Uniandes y especificar qué funcionalidad de proyecto implementarán.
 
 1. Manuel Mejía Arana, m.mejiaa23@uniandes.edu.co, 202423975.
-1. Gabriel Ramírez, g.ramirezb23@uniandes.edu.co, 202422096.
-1. Juan Godoy, jd.godoy@uniandes.edu.co, 202424711.
+2. Gabriel Ramírez, g.ramirezb23@uniandes.edu.co, 202422096.
+3. Juan Godoy, jd.godoy@uniandes.edu.co, 202424711.
 
 [Volver al inicio](#laboratorio-1)
 
