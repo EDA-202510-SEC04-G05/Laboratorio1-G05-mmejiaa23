@@ -120,30 +120,36 @@ def main():
     while working:
         print_menu()
         inputs = input("Seleccione una opción para continuar\n")
-        if int(inputs[0]) == 1:
-            print("Cargando información de libros....")
-            books = load_books(app)
-            print("Total de libros cargados: " + str(books) + "\n")
+        
+        try:
+            if int(inputs) == 1:
+                print("Cargando información de libros....")
+                books = load_books(app)
+                print("Total de libros cargados: " + str(books) + "\n")
 
-        elif int(inputs[0]) == 2:
-            print("Cargando información de tags....")
-            tags = load_tags(app)
-            print("Total de tags cargados: " + str(tags) + "\n")
+            elif int(inputs) == 2:
+                print("Cargando información de tags....")
+                tags = load_tags(app)
+                print("Total de tags cargados: " + str(tags) + "\n")
 
         # TODO: Mods Lab 1, agregar la funcion opt 3 -> load_book_tags().
         # Agregue la opción 3 que llama a la función load_books_tags() (creada en la lógica).
         # Esta función carga los tags de los libros en el catalogo.
         # Puede guiarse de las opciones 1 y 2.
         # Imprima el total de tags de los libros cargados.
-        elif int(inputs[0]) == 3:
-            print("Cargando información de book tags...")
-            book_tags = load_books_tags(app)
-            print("Total de tags de los libros cargados: " + str(book_tags) + "\n")
+            elif int(inputs) == 3:
+                print("Cargando información de book tags...")
+                book_tags = load_books_tags(app)
+                print("Total de tags de los libros cargados: " + str(book_tags) + "\n")
 
-        elif int(inputs[0]) == 0:
-            working = False
-            print("\nGracias por utilizar el programa.")
+            elif int(inputs) == 0:
+                working = False
+                print("\nGracias por utilizar el programa.")
 
-        else:
-            print("Opcion erronea, vuelva a elegir.\n")
+            else:
+                print("Opcion erronea, vuelva a elegir.\n")
+            
+        except ValueError:
+            print("Ingrese un número.\n")    
+            
     sys.exit(0)
